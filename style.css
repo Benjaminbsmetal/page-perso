@@ -1,0 +1,181 @@
+/* Page personnelle — styles.
+   Mardi : typographie, couleurs, espacements (« CSS from scratch »).
+   Jeudi : mise en page mobile first avec Flexbox ou Grid (« Layout Lab »). */
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+ 
+:root {
+  --couleur-texte: #1f2a5a;
+  --couleur-fond: #f4f1ea;
+  --espace-1: 0.5rem;
+  --espace-2: 1rem;
+  --espace-3: 2rem;
+  --espace-4: 9rem;
+  --font-size: 2rem;
+  --font-size-p: 1.3rem
+}
+
+img {
+    display: block;
+    margin: var(--espace-3) auto 0;
+    margin-bottom: var(--espace-3);
+    width: 30rem;
+    height: 20rem;
+}
+
+nav{
+   padding: 1.2rem;
+   overflow: hidden;
+   width: 100%;
+   background-color: rgb(157, 184, 238);
+   float: top;
+   font-size: 1.5rem;
+   text-align: center;
+   var(--couleur-texte: #1f2a5a);
+   }
+
+.entete{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 1rem;
+}
+   
+  #presentation{
+
+  }
+  #competences{
+
+  }
+  #projets{
+
+  }
+  #message{
+
+  }
+
+   #contact{
+
+   }
+
+body {
+   color: var(--couleur-texte);
+   background: var(--couleur-fond); }
+
+h1{
+   margin: 2rem;
+   text-align: center;
+   font-size: 3rem;
+}
+
+h2{
+   margin-bottom: var(--espace-2);
+   font-size: var(--font-size);
+   text-decoration: underline;
+}
+
+.titre2{
+   text-align: center;
+   font-size: 2rem;
+   text-decoration: none;
+}
+
+section{
+   padding: var(--espace-2) ;
+   margin-left: var(--espace-4);
+   margin-right: var(--espace-4);
+   margin-top: 0;
+   margin-bottom: var(--espace-3);
+}
+
+p{
+   font-size: var(--font-size-p);
+   flex-wrap: wrap;
+}
+
+li{
+   font-size: var(--font-size-p);
+   overflow-wrap: break-word;
+}
+
+.espace{
+   margin-top: var(--espace-1);
+}
+
+.carte {
+   padding: var(--espace-3);
+   border: 2px solid var(--couleur-texte);
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   overflow-wrap: break-word;
+}
+
+label{
+   font-size: var(--font-size-p);
+   margin-top: var(--espace-1);
+}
+
+textarea{
+   width: max-content;
+}
+
+button{
+margin-top: var(--espace-1);
+   width: 100px;
+   height: 25px;
+   cursor: pointer;
+
+}
+
+.mail{
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+footer {
+padding: var(--espace-2);
+margin: var(--espace-1);
+}
+
+
+
+@media (min-width : 48rem){
+  .entete{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+input{
+    width: 300px;
+    height: 40px;
+    font-family: inherit ;
+    font-size: var(--font-size-p);
+   }
+   textarea{
+   width: 500px;
+   height: 80px;
+   font-family: inherit;
+   font-size: var(--font-size-p);
+}
+}
+/* un point est une classe 
+.important{
+   color: pink;
+}
+/* un # est un id et prioritaire à la classe
+#toto{
+   color: red;
+}  */
+

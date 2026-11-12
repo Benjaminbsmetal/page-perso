@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page perso</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- TODO: en-tête avec navigation, contenu principal (présentation, compétences,
+         projets, contact), pied de page -->
+    <header>
+      <nav class="entete">
+    <a href="#presentation">Présentation</a>
+    <a href="#competences">Ce que j'apprends</a>
+    <a href="#projets">Réalisations</a>
+    <a href="#message">Message</a>
+    <a href="#contact">Me contacter</a>
+  </nav>
+    </header>
+
+  
+  <main>
+
+    <h1>Benjamin .S</h1>
+    <h2 class="titre2">En formation Développeur web, web mobile.</h2>
+    <img src="./img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" alt="photo codage">
+
+    <section class="carte">
+      <h2 id="presentation" class="important">Présentation</h2>
+      <p>Ayant obtenu un Bac Professionnel en Maintenance Véhicules Automobiles j'ai débuté ma carrière en tant que mécanicien auto. J'ai ensuite évolué dans ce domaine à différents postes, Chef d'atelier, Réceptionnaire atelier, Responsable réception atelier pour finir Responsable commerce. Après une carrière de 27 ans dans l'automobile, je souhaite me reconvertir en tant que Développeur web. J'ai débuté en autodidacte à l'aide de tutos pour créer des sites internet. J'ai voulu intégrer l'IMTS de Dinard afin d'obtenir une formation proffessionalisante pour ensuite travailler dans ce domaine.</p>
+    </section>
+
+    <section class="carte">
+      <h2 id="competences">Ce que j'apprends</h2>
+      
+        <ul>
+          <li>HTML</li>
+          <li>CSS ( Flexbox, Grid, Responsive )</li>
+          <li>Javascript</li>
+          <li>Git et Github</li>
+        </ul>
+    
+    </section>
+
+    <section class="carte">
+      <h2 id="projets">Mes réalisations</h2>
+      <p>Quelques réalisations et projets en cours :</p>
+      <ol>
+        <li class="espace">Projet 1 : <a href="https://github.com/Benjaminbsmetal/dwwm-tp/tree/ce5bc95abca3f2eea65766de5a4e9a981a704094/s05-exercices/page-perso">page perso</a></li>
+        <li>Exercice : <a href="https://github.com/Benjaminbsmetal/dwwm-tp/tree/ce5bc95abca3f2eea65766de5a4e9a981a704094/s06-exercices/responsive-exercices">Responsive exercice</a></li>
+        <li>Exercice : <a href="https://github.com/Benjaminbsmetal/dwwm-tp/tree/ce5bc95abca3f2eea65766de5a4e9a981a704094/s05-exercices/css-exercices">CSS exercice</a></li>
+      </ol>
+      
+    </section>
+
+    
+
+    <section class="carte">
+      <h2 id="contact">Message</h2>
+<form>
+  <p>Vous pouvez me laisser un message avec votre email afin que je puisse vous répondre.</p>
+
+    <label for="Nom">Votre Nom</label>
+      <input type="text" required id="Nom" name="Nom" placeholder="votre nom">
+
+  <label for="email">Votre adresse email</label>
+      <input type="email" required id="email" autocomplete="email" placeholder="exemple@email.com">
+
+  <label for="message">Votre message</label>
+      <textarea required id="message" name="message" placeholder="Votre message"></textarea>
+
+  <button type="submit">Envoyer</button>
+    </form>
+      </section>
+
+<section class="carte">
+      <h2 id="contact" class="important">Me contacter</h2>
+      <ul>
+          <li>Email : <a class="mail" href="mailto:benjamin.suas@institutsolacroup.com">benjamin.suas@institutsolacroup.com</a></li>
+          <li>Github : <a href="https://github.com/Benjaminbsmetal">lien Github</a></li>
+          <li>Linkedin : <a href="https://www.linkedin.com/in/benjamin-undefined-34699a3a0">lien Linkedin</a></li>
+        </ul>
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+  </body>
+
+</html>
