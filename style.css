@@ -76,7 +76,10 @@ h1{
 
 h2{
    margin-bottom: var(--espace-2);
+   margin-left: auto;
+   margin-right: auto;
    font-size: var(--font-size);
+   overflow-wrap: break-word;
 }
 
 .titre2{
