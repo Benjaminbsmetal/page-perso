@@ -147,7 +147,7 @@ textarea{
 button{
 margin-top: var(--espace-1);
    width: 100px;
-   height: 25px;
+   height: 20px;
    cursor: pointer;
 
 }
