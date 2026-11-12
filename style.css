@@ -12,6 +12,7 @@
 :root {
   --couleur-texte: #1f2a5a;
   --couleur-fond: #f4f1ea;
+  --couleur-top: rgb(157, 184, 238);
   --espace-1: 0.5rem;
   --espace-2: 1rem;
   --espace-3: 2rem;
@@ -32,11 +33,10 @@ nav{
    padding: 1.2rem;
    overflow: hidden;
    width: 100%;
-   background-color: rgb(157, 184, 238);
+   background-color: var(--couleur-top);
    float: top;
    font-size: 1.5rem;
    text-align: center;
-   var(--couleur-texte: #1f2a5a);
    }
 
 .entete{
@@ -80,6 +80,7 @@ h2{
    margin-right: auto;
    font-size: var(--font-size);
    overflow-wrap: break-word;
+   text-decoration: underline;
 }
 
 .titre2{
